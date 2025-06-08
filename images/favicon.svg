@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 64 64"
+   fill="none"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <filter
+       id="mask-powermask-path-effect12_inverse"
+       inkscape:label="filtermask-powermask-path-effect12"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect12_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect12_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect13_inverse"
+       inkscape:label="filtermask-powermask-path-effect13"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect13_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect13_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect14_inverse"
+       inkscape:label="filtermask-powermask-path-effect14"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect14_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect14_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect15_inverse"
+       inkscape:label="filtermask-powermask-path-effect15"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect15_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect15_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect16_inverse"
+       inkscape:label="filtermask-powermask-path-effect16"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect16_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect16_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect17_inverse"
+       inkscape:label="filtermask-powermask-path-effect17"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect17_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect17_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="12.59375"
+     inkscape:cx="31.682382"
+     inkscape:cy="31.801489"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3"
+     cx="7.7654872"
+     cy="16.005371"
+     inkscape:label="dot"
+     rx="4.9848537"
+     ry="5.0642586" />
+  <ellipse
+     style="fill:#6c3a1e;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-8-7-8"
+     inkscape:label="dot"
+     ry="21.157101"
+     rx="20.866392"
+     cy="38.87001"
+     cx="24.573444" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-1"
+     cx="18.912895"
+     cy="11.500983"
+     inkscape:label="dot"
+     rx="4.349618"
+     ry="4.3496184" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-1-7"
+     cx="29.637461"
+     cy="11.950115"
+     inkscape:label="dot"
+     rx="3.8731911"
+     ry="3.9525962" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-1-7-9"
+     cx="39.069042"
+     cy="17.156073"
+     inkscape:label="dot"
+     rx="3.6397634"
+     ry="3.7143829" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-1-7-9-6"
+     cx="46.382938"
+     cy="24.917854"
+     inkscape:label="dot"
+     rx="3.0950985"
+     ry="3.1585517" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-1-7-9-6-0"
+     cx="49.862293"
+     cy="34.357063"
+     inkscape:label="dot"
+     rx="2.5893383"
+     ry="2.6424227" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-1-7-9-6-0-6"
+     cx="49.450119"
+     cy="43.907928"
+     inkscape:label="dot"
+     rx="2.2391965"
+     ry="2.2851026" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-1-7-9-6-0-6-4"
+     cx="46.375668"
+     cy="51.879047"
+     inkscape:label="dot"
+     rx="2.0406854"
+     ry="2.0825217" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-3"
+     inkscape:label="dot"
+     ry="4.4995732"
+     rx="4.4290223"
+     cy="36.447464"
+     cx="36.136219" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-3-3"
+     inkscape:label="dot"
+     ry="3.8945537"
+     rx="3.8334892"
+     cy="27.433016"
+     cx="27.577906" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-3-3-4"
+     inkscape:label="dot"
+     ry="3.3298686"
+     rx="3.277658"
+     cy="27.456421"
+     cx="16.878155" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-3-3-4-7"
+     inkscape:label="dot"
+     ry="2.926522"
+     rx="2.8806357"
+     cy="34.231731"
+     cx="10.004706" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-3-3-4-7-7"
+     inkscape:label="dot"
+     ry="2.5231755"
+     rx="2.4836135"
+     cy="42.729134"
+     cx="9.3520994" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-3-3-4-7-7-2"
+     cx="12.451357"
+     cy="49.521858"
+     inkscape:label="dot"
+     rx="2.2454002"
+     ry="2.2811675" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-3-3-4-7-7-2-0"
+     cx="18.500984"
+     cy="54.292217"
+     inkscape:label="dot"
+     rx="1.8483779"
+     ry="1.8778211" />
+  <ellipse
+     style="fill:#4cb152;fill-opacity:1;fill-rule:evenodd;stroke:#5b2617;stroke-width:0;stroke-linecap:round;paint-order:markers fill stroke"
+     id="path3-1-7-9-6-0-6-4-0"
+     cx="40.961281"
+     cy="57.429996"
+     inkscape:label="dot"
+     rx="1.8024721"
+     ry="1.8394248" />
+</svg>

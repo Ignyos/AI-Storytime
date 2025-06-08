@@ -1,0 +1,40 @@
+<!DOCTYPE htlm>
+<html lang="en">
+    <head>
+        <title>AI Storytime</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg+xml" />
+
+        <script src="./scripts/api.js?v=1"></script>
+        <script src="./scripts/tags.js?v=1"></script>
+        <script src="./scripts/posts.js?v=1"></script>
+        <script src="./scripts/helpers.js?v=1"></script>
+        <script src="./scripts/menu.js?v=1"></script>
+        <script src="./scripts/content.js?v=1"></script>
+        <link async rel="stylesheet" href="./styles/site.css">
+    </head>
+    <body>
+        <div id="header">
+            <div id="funtility"></div>
+            <div id="menubutton">|||</div>
+            <div 
+                class="header-text"
+                onclick='content.home();menu.hideMenu();'>
+                <span><img aria-label="AI Storytime" src="./images/AI Storytime.svg" class="ai-storytime"/></span>
+            </div>
+        </div>
+        <div id="menu"></div> 
+        <div id="content"></div>
+    </body>
+    <script>
+        let api, menu, content
+        window.onload = async () => {
+            // detect if this is the development environment or hosted on a server
+            api = window.location.host ? new API() : new API('http://localhost:5194/')
+            menu = new Menu()
+            content = new Content()
+            await content.route()
+        }
+    </script>
+</html>
