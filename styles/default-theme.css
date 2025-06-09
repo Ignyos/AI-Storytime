@@ -1,0 +1,24 @@
+:root {
+  /* Header and Menu */
+  --hm-bg: rgb(64,64,74); /* Header and Menu background color */
+  --hm-border: rgb(36,36,36); /* Header and Menu border color */
+
+  /* Main menu icon */
+  --m-icon-color: #9d6d54; /* Hamburger icon color */
+  --m-icon-shadow: 0 0 5px black; /* Hamburger icon text shadow */
+
+  /* Menu */
+  --m-color: #EEE; /* Menu text color */
+  --m-date: #acccff; /* Menu item date color */
+  --m-hover: rgba(255,255,255,.1); /* Menu item hover background */
+  --m-select: rgba(255, 251, 0, 0.1); /* Menu item selected background */
+
+  /* Content area */
+  --c-color: #E0E0E0; /* Content text color */
+  --c-bg: rgb(70,70,84); /* Content background color */
+
+  /* Accents */
+  --h5: #acccff; /* h5 color */
+  --legend: #95ccff; /* Fieldset border and legend text color */
+  --tag: #979797; /* Tag text and border color */
+}

@@ -8,7 +8,7 @@
     height: 42px;
     margin-left: .5rem;
     position: relative;
-    top: 0.5rem;
+    /* top: 0.5rem; */
 }
 
 .hide {
@@ -45,21 +45,14 @@ body {
 
 #header {
     display: grid;
-    grid-template-areas: 'menu-btn home-btn . funtility';
+    grid-template-areas: 'menu-btn home-btn . .';
     grid-template-columns: auto auto 1fr auto;
     grid-area: header;
     background: rgb(64,64,74);
     border-bottom: solid 1px rgb(36, 36, 36);
     padding: 10px 20px;
-    text-shadow: 0 0 5px black;
     letter-spacing: 1;
     z-index: 1;
-}
-
-#funtility {
-    grid-area: funtility;
-    font-size: 18px;
-    padding-top: 8px;
 }
 
 #content {
@@ -103,6 +96,7 @@ p {
     margin-top: .2rem;
     user-select: none;
     color: #9d6d54;
+    text-shadow: 0 0 5px black;
 }
 
 #menu {
@@ -305,47 +299,6 @@ img {
 
 /* #endregion */
 
-.comments {
-    margin-top: 24px;
-    border-right: none;
-    border-bottom: none;
-    border-left: none;
-    border-color: 95ccff;
-}
-
-textarea.comment {
-    outline: none;
-    border: 0;
-    margin: 10px 0;
-    border-radius: 6px;
-    padding: 6px;
-    font-size: 16px;
-    color: darkslategray;
-    width: 100%;
-    padding-bottom: 35px;
-}
-
-textarea.comment:disabled {
-    background-color: rgb(90,90,104);
-}
-
-button.save-comment {
-    cursor: pointer;
-    margin-top: -39px;
-    margin-left: 6px;
-}
-
-.comment {
-    display: grid;
-    grid-template-rows: 35px auto;
-    grid-template-columns: 200px auto;
-    grid-template-areas: 'name time' 'text text';
-    border-radius: 4px;
-    border: solid 1px #6e6e6e;
-    margin-bottom: 6px;
-    padding: 6px;
-}
-
 .name {
     grid-area: name;
     color: #95ccff;
@@ -354,8 +307,4 @@ button.save-comment {
 .time {
     grid-area: time;
     font-size: 12px;
-}
-
-.comment-content {
-    grid-area: text;
 }

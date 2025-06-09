@@ -1,8 +1,8 @@
 const posts = [
-    {   id: 240722, year: 2025, month: 6, day: 8,
+    {   id: 250609, year: 2025, month: 6, day: 9,
         menuText: "The Glass Fox and Rabbit",
         tags: [
-            tags.PLANTS, tags.PROJECTS, tags.YARD
+            tags.FABLE
         ],
         src: './posts/2025/250607.js'
     }

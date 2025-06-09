@@ -4,7 +4,6 @@ class Content {
         window.addEventListener('resize',()=>{
             this.resize()
         })
-        this.root = "Hugelhaus"
         this.post = null
     }
 
@@ -24,19 +23,47 @@ class Content {
             window.location = window.location.pathname
             return
         } else if (!args.search) {
-            this.src = "./posts/home.js"
-            await api.postAppLog("Home page loaded")
+            const randomPost = this.getRandomPost()
+            this.src = randomPost.src
+            this.post = randomPost
+            // Set logo image for random post
+            await this.setLogoImage(randomPost.id)
+            await api.postAppLog(`Random post ${randomPost.id} - ${randomPost.menuText}`)
+            window.location = window.location.pathname
             return
         }
 
         post = this.getPost(args.id)
-        this.post = post
         if (!post){
             window.location = window.location.pathname
         } else {
             this.src = post.src
+            // Set logo image for selected post
+            await this.setLogoImage(post.id)
         }
         await api.postAppLog(`Post ${post.id} - ${post.menuText}`)
+    }
+
+    /**
+     * Sets the logo image based on the post id, with fallback to default logo if not found.
+     */
+    async setLogoImage(postId) {
+        const logoImg = document.getElementById('ai-storytime-logo')
+        if (!logoImg) return
+        const logoPath = `./images/logos/${postId}.png`
+        // Check if the image exists by trying to load it
+        return new Promise((resolve) => {
+            const testImg = new window.Image()
+            testImg.onload = () => {
+                logoImg.src = logoPath
+                resolve()
+            }
+            testImg.onerror = () => {
+                logoImg.src = './images/AI Storytime.svg'
+                resolve()
+            }
+            testImg.src = logoPath
+        })
     }
 
     getUrlArgs(){
@@ -69,6 +96,11 @@ class Content {
             }
         }))
         return post
+    }
+
+    getRandomPost(){
+        let index = Math.floor(Math.random() * posts.length)
+        return posts[index]
     }
 
     set innerHTML(html){
@@ -131,7 +163,6 @@ class Content {
         document.querySelectorAll('.slides')
         .forEach(slide => {
             new Slide({
-                root: this.root,
                 ele: slide
             })
         });

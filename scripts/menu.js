@@ -24,12 +24,12 @@ class Menu {
     syncLocalStorage(push = false){
         if (push)
         {
-            localStorage.setItem('hugelhaus',JSON.stringify(this.state))
+            localStorage.setItem('ai-storytime',JSON.stringify(this.state))
         } else {
-            let ms = localStorage.getItem('hugelhaus')
+            let ms = localStorage.getItem('ai-storytime')
             if (!ms)
             {
-                localStorage.setItem('hugelhaus',JSON.stringify(this.state))
+                localStorage.setItem('ai-storytime',JSON.stringify(this.state))
             }
             else
             {
