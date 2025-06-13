@@ -1,4 +1,7 @@
 :root {
+  /* Body */
+  --b-color: #E0E0E0; /* Body text color */
+
   /* Header and Menu */
   --hm-bg: rgb(64,64,74); /* Header and Menu background color */
   --hm-border: rgb(36,36,36); /* Header and Menu border color */
@@ -12,6 +15,7 @@
   --m-date: #acccff; /* Menu item date color */
   --m-hover: rgba(255,255,255,.1); /* Menu item hover background */
   --m-select: rgba(255, 251, 0, 0.1); /* Menu item selected background */
+  --m-select-hover: rgba(255, 251, 0, 0.18); /* Menu item selected + hover background */
 
   /* Content area */
   --c-color: #E0E0E0; /* Content text color */
