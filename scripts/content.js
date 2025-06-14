@@ -1,5 +1,6 @@
 class Content {
     constructor(data = {}){
+        console.log('constructor');
         this.div = document.getElementById("content")
         window.addEventListener('resize',()=>{
             this.resize()
@@ -8,10 +9,12 @@ class Content {
     }
 
     home(){
+        console.log('home');
         window.location = window.location.pathname
     }
 
     async route(id = false){
+        console.log('route');
         let post = false
         if (id) {
             window.location = `${window.location.pathname}?id=${id}`
@@ -24,12 +27,12 @@ class Content {
             return
         } else if (!args.search) {
             const randomPost = this.getRandomPost()
+            // Update the URL with the random post id without reloading
+            window.history.replaceState({}, '', `${window.location.pathname}?id=${randomPost.id}`)
             this.src = randomPost.src
             this.post = randomPost
-            // Set logo image for random post
             await this.setLogoImage(randomPost.id)
             await api.postAppLog(`Random post ${randomPost.id} - ${randomPost.menuText}`)
-            window.location = window.location.pathname
             return
         }
 
@@ -38,7 +41,6 @@ class Content {
             window.location = window.location.pathname
         } else {
             this.src = post.src
-            // Set logo image for selected post
             await this.setLogoImage(post.id)
         }
         await api.postAppLog(`Post ${post.id} - ${post.menuText}`)
@@ -67,6 +69,7 @@ class Content {
     }
 
     getUrlArgs(){
+        console.log('getUrlArgs');
         let args = {
             search: false,
             count: 0
@@ -89,6 +92,7 @@ class Content {
     }
 
     getPost(id){
+        console.log('getPost');
         let post = false
         posts.forEach((p => {
             if (p.id === parseInt(id)){
@@ -99,11 +103,13 @@ class Content {
     }
 
     getRandomPost(){
+        console.log('getRandomPost');
         let index = Math.floor(Math.random() * posts.length)
         return posts[index]
     }
 
     set innerHTML(html){
+        console.log('set innerHTML');
         let container = document.createElement('div')
         container.classList.add('container')
         container.innerHTML = html
@@ -111,6 +117,7 @@ class Content {
         this.div.appendChild(container)
         this.buildSlides()
         this.resize()
+        console.log(this.post)
         if(this.post)
         {
             this.addTagsSection(container)
@@ -118,17 +125,20 @@ class Content {
     }
 
     set src(src){
+        console.log('set src');
         this.div.innerHTML = null
         this.removeContentScriptElement()
         this.addContentScriptElement(src)
     }
 
     removeContentScriptElement(){
+        console.log('removeContentScriptElement');
         let old = document.getElementById('content-script')
         if (old) old.remove()
     }
 
     addContentScriptElement(src){
+        console.log('addContentScriptElement');
         let ele = document.createElement('script')
         ele.setAttribute('type','text/javascript')
         ele.setAttribute('src',src)
@@ -137,6 +147,7 @@ class Content {
     }
 
     addTagsSection(container){
+        console.log('addTagsSection');
         let ele = document.createElement('fieldset')
         ele.classList.add('tags')
 
@@ -155,11 +166,13 @@ class Content {
     }
 
     resize(){
+        console.log('resize');
         let container = document.querySelector('.container')
         let w = container.clientWidth - 4
     }
 
     buildSlides(){
+        console.log('buildSlides');
         document.querySelectorAll('.slides')
         .forEach(slide => {
             new Slide({

@@ -10,10 +10,8 @@ class API {
   }
 
   async postAppLog(message) {
-    // remove any whitespace from the message
     message = message.trim();
     if (!message) {
-      alert('Message cannot be empty');
       return;
     }
     await fetch(this.apiBaseUrl + 'log/app', {
