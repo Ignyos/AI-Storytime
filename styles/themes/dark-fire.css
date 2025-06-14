@@ -1,0 +1,33 @@
+:root {
+  /* Body */
+  --b-color: #ffe7c2; /* Warm, fire-lit text color */
+
+  /* Header and Menu */
+  --hm-bg: #000000; /* Midnight black */
+  --hm-border: #3a2c1a; /* Dark brown, like tree bark */
+  --hm-btn-bg: #070708; /* Soft orange for header buttons */
+
+  /* Main menu icon */
+  --m-icon-color: #ffb347; /* Firelight orange */
+  --m-icon-shadow: 0 0 8px #ffb347; /* Soft fire glow */
+
+  /* Menu */
+  --m-color: #ffe7c2; /* Fire-lit menu text */
+  --m-date: #ffb347; /* Ember orange for dates */
+  --m-hover: rgba(255, 140, 0, 0.12); /* Flicker of orange on hover */
+  --m-select: rgba(255, 87, 34, 0.18); /* Deeper orange for selected */
+  --m-select-hover: rgba(255, 140, 0, 0.22); /* Brighter on hover+select */
+
+  /* Content area */
+  --c-color: #ffe7c2; /* Fire-lit content text */
+  --c-bg: #070708; /* Night sky background */
+
+  /* Accents */
+  --h5: #ffd580; /* Soft yellow, like fire sparks */
+  --legend: #ffb347; /* Ember orange for legends */
+  --tag: #ff7043; /* Warm orange for tags */
+
+  /* Tag input */
+  --tag-input-bg: #313139; /* Dark background for tag input */
+  --tag-input-chkbx-label: #ffe7c2; /* Light text color for checkbox label */
+}

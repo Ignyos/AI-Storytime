@@ -32,6 +32,7 @@ class Content {
             this.src = randomPost.src
             this.post = randomPost
             await this.setLogoImage(randomPost.id)
+            this.setTheme(randomPost.theme)
             await api.postAppLog(`Random post ${randomPost.id} - ${randomPost.menuText}`)
             return
         }
@@ -42,6 +43,7 @@ class Content {
         } else {
             this.src = post.src
             await this.setLogoImage(post.id)
+            this.setTheme(post.theme)
         }
         await api.postAppLog(`Post ${post.id} - ${post.menuText}`)
     }
@@ -66,6 +68,17 @@ class Content {
             }
             testImg.src = logoPath
         })
+    }
+
+    setTheme(theme) {
+        console.log('setTheme');
+        const themeLink = document.getElementById('theme-css');
+        if (!themeLink) return;
+        if (theme) {
+            themeLink.href = `./styles/themes/${theme}.css`;
+        } else {
+            themeLink.href = './styles/default-theme.css';
+        }
     }
 
     getUrlArgs(){

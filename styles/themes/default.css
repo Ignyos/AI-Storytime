@@ -25,4 +25,8 @@
   --h5: #acccff; /* h5 color */
   --legend: #95ccff; /* Fieldset border and legend text color */
   --tag: #979797; /* Tag text and border color */
+
+  /* Tag input */
+  --tag-input-bg: #EEE; /* Light background for tag input (default theme) */
+  --tag-input-chkbx-label: #222; /* Dark text color for checkbox label (default theme) */
 }
