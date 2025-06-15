@@ -203,8 +203,10 @@ class Slide {
         this.right
         this.img
         this.caption
-        this.sources = JSON.parse(this.ele.dataset.sources)
-        this.localPath = this.sources[0][0]
+        // Support both new single-image and legacy multi-image modes
+        this.imagePath = this.ele.dataset.image || null
+        this.sources = this.ele.dataset.sources ? JSON.parse(this.ele.dataset.sources) : null
+        this.localPath = this.sources ? this.sources[0][0] : null
         this.currentIndex = 0
         this.isMaximized = false
         this.minMax
@@ -214,12 +216,12 @@ class Slide {
 
     buildPresentationElements()
     {
-        if (this.sources.length > 1)
+        // Only build navigation if multiple sources exist
+        if (this.sources && this.sources.length > 1)
         {
             this.buildLeftNav()
             this.buildRightNav()
         }
-
         this.img = document.createElement('img')
         this.ele.appendChild(this.img)
     }
@@ -239,7 +241,7 @@ class Slide {
     {
         if (this.currentIndex > 0){
             this.currentIndex--
-        } else {
+        } else if (this.sources) {
             this.currentIndex = this.sources.length - 1
         }
         this.changeSource()
@@ -258,9 +260,9 @@ class Slide {
 
     next()
     {
-        if (this.currentIndex < this.sources.length - 1){
+        if (this.sources && this.currentIndex < this.sources.length - 1){
             this.currentIndex++
-        } else {
+        } else if (this.sources) {
             this.currentIndex = 0
         }
         this.changeSource()
@@ -268,7 +270,11 @@ class Slide {
 
     changeSource()
     {
-        this.img.src = `${this.Host}${this.sources[this.currentIndex]}`
+        if (this.imagePath) {
+            this.img.src = this.imagePath
+        } else if (this.sources) {
+            this.img.src = `${this.Host}${this.sources[this.currentIndex]}`
+        }
     }
 
     /**
